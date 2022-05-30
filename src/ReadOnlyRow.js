@@ -6,7 +6,9 @@ const ReadOnlyRow = (props) => {
     <td>{props.item.name}</td>
     <td>{props.item.email}</td>
     <td>{props.item.phone}</td>
-    <td></td>
+    <td> <button onClick={(event)=>props.editClick(event,props.item)}>Edit</button> /
+        <button>Del</button>
+    </td>
 </tr></>
   )
 }
